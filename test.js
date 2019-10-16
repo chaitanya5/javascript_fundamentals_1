@@ -53,4 +53,10 @@ const num = null
 //alert('0101' & '1101')//65
 // alert(a = 1 + 2, 3 + 4) // Comma has least precedence so 1+2 is assigned first
 
+let a = 0;
+alert( Boolean(a) ); // false
 
+let b = "0";
+alert( Boolean(b) ); // true
+
+alert(a == b); // true!
