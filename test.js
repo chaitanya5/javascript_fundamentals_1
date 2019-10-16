@@ -53,10 +53,64 @@ const num = null
 //alert('0101' & '1101')//65
 // alert(a = 1 + 2, 3 + 4) // Comma has least precedence so 1+2 is assigned first
 
-let a = 0;
-alert( Boolean(a) ); // false
+// let a = 0;
+// alert( Boolean(a) ); // false
 
-let b = "0";
-alert( Boolean(b) ); // true
+// let b = "0";
+// alert( Boolean(b) ); // true
 
-alert(a == b); // true!
+// alert(a == b); // true!
+
+// alert('' == false) //true
+// alert(undefined >= 0) //False
+// alert("apple" < "pineapple") //compares size//true
+// alert(null == "\n0\n") //false
+// alert(null === +"\n0\n")//false
+
+// let age = prompt('How old are you?', 100);
+
+// alert(`You are ${age} years old!`); // You are 100 years old!
+
+// confirm('are you the boss')
+// alert(boss)
+
+// let nam = prompt('Enter your name and age','Enter name here')
+// confirm('Are you ' + nam+ ' ?')
+
+// if ("0") {
+//     alert( 'Hello' );
+//   }
+
+// let x;
+
+// false || (x = 1);
+
+// alert(x); // 1
+
+// Loops
+
+// let sum = 0;
+
+// while (true) {
+
+//   let value = +prompt("Enter a number", '');
+
+//   if (!value) break; // (*)
+
+//   sum += value;
+
+// }
+// alert( 'Sum: ' + sum );
+// let i = 3;
+
+// while (i) {
+//   alert( i-- );
+// }
+
+// let i = 0;
+// while (i++ < 5) alert( i );
+
+// for (let i = 0; i < 5; ++i) alert( i );
+
+
+
