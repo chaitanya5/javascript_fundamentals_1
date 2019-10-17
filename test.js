@@ -112,5 +112,76 @@ const num = null
 
 // for (let i = 0; i < 5; ++i) alert( i );
 
+//Switch case
+// let a = "1";
+// let b = 0;
+
+// switch (-a) {
+//   case b + 1:
+//     alert("this runs, because +a is 1, exactly equals b+1");
+//     break;
+
+//   default:
+//     alert("this doesn't run");
+// }
+
+// let arg = prompt("Enter a value?");
+// switch (arg) {
+//   case '0':
+//   case '1':
+//     alert( 'One or zero' );
+//     break;
+
+//   case '2':
+//     alert( 'Two' );
+//     break;
+
+//   case 3:
+//     alert( 'Never executes!' );
+//     break;
+//   default:
+//     alert( 'An unknown value' );
+// }
+
+// function showMessage(from, text) {
+
+//     from = '*' + from + '*'; // make "from" look nicer
+  
+//     alert( from + ': ' + text );
+//   }
+  
+//   let from = "Ann";
+  
+//   showMessage(from, "Hello"); // *Ann*: Hello
+  
+//   // the value of "from" is the same, the function modified a local copy
+//   alert( from ); // Ann
+
+// function checkAge(age) {
+//     if (age > 18) {
+//       return true;
+//     } else {
+//       return confirm('Do you have permission from your parents?');
+//     }
+//   }
+  
+//   let age = prompt('How old are you?', 18);
+  
+//   if ( checkAge(age) ) {
+//     alert( 'Access granted' );
+//   } else {
+//     alert( 'Access denied' );
+//   }
+
+//   function showMovie(age) {
+//     if ( !checkAge(age) ) {
+//       return;
+//     }
+  
+//     alert( "Showing you the movie" ); // (*)
+//     // ...
+//   }
+//   showMovie(15)
+
 
 
