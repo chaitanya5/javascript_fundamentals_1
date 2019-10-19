@@ -171,6 +171,7 @@ const num = null
 //     alert( 'Access granted' );
 //   } else {
 //     alert( 'Access denied' );
+
 //   }
 
 //   function showMovie(age) {
@@ -183,5 +184,142 @@ const num = null
 //   }
 //   showMovie(15)
 
+// let user = {
+//     name: "John",
+//     age: 30
+//   };
+  
+//   let key = prompt("What do you want to know about the user?", "name");
+  
+//   // access by variable
+//   alert( user[key] ); // John (if enter "name")
+
+// let user = {
+//     name: "John",
+//     age: 30
+//   };
+  
+//   let key = "name";
+//   alert( user.key ) // undefined
 
 
+// let fruit = prompt("Which fruit to buy?", "apple");
+
+// let bag = {
+//   [fruit]: 5, // the name of the property is taken from the variable fruit
+// };
+
+// alert( bag.apple ); // 5 if fruit="apple"
+
+// let fruit = 'apple';
+// let bag = {
+//   [fruit + 'Computers']: 5 // bag.appleComputers = 5
+// };
+// alert(bag.fruit)
+
+// Interlinked Objects
+
+// function marry(man, woman) {
+//     woman.husband = man;
+//     man.wife = woman;
+  
+//     return {
+//       father: man,
+//       mother: woman
+//     }
+//   }
+  
+//   let family = marry({
+//     name: "John"
+//   }, {
+//     name: "Ann"
+//   });
+
+// let user = {
+//     name: "John",
+//     age: 30,
+  
+//     sayHi() {
+//       alert( this.name ); // leads to an error
+//     }  
+//   }; 
+  
+//   let admin = user;
+//   user = null; // overwrite to make things obvious
+  
+//   admin.sayHi(); // Whoops! inside sayHi(), the old name is used! error!
+
+// let calculator = {
+//     sum() {
+//       return this.a + this.b;
+//     },
+  
+//     mul() {
+//       return this.a * this.b;
+//     },
+  
+//     read() {
+//       this.a = +prompt('a?', 0);
+//       this.b = +prompt('b?', 0);
+//     }
+//   };
+  
+//   calculator.read();
+//   alert( calculator.sum() );
+//   alert( calculator.mul() );
+
+// let ladder = {
+//     step: 0,
+//     up() {
+//       this.step++;
+//       return this;
+//     },
+//     down() {
+//       this.step--;
+//       return this;
+//     },
+//     showStep() {
+//       alert( this.step );
+//       return this;
+//     }
+//   }
+  
+//   ladder.up().up().down().up().down().showStep(); // 1
+
+// function Calculator() {
+
+//     this.read = function() {
+//       this.a = +prompt('a?', 0);
+//       this.b = +prompt('b?', 0);
+//     };
+  
+//     this.sum = function() {
+//       return this.a + this.b;
+//     };
+  
+//     this.mul = function() {
+//       return this.a * this.b;
+//     };
+//   }
+  
+//   let calculator = new Calculator();
+//   calculator.read();
+  
+//   alert( "Sum=" + calculator.sum() );
+//   alert( "Mul=" + calculator.mul() );
+
+function makeWorker() {
+  let name = "Pete";
+
+  return function() {
+    alert(name);
+  };
+}
+
+let name = "John";
+
+// create a function
+let work = makeWorker();
+
+// call it
+work(); // what will it show?
